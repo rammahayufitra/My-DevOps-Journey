@@ -5,3 +5,7 @@ Redis Hashes are maps between the string fields and the string values
 2) "ramma hayu fitra"
 3) "pekerjaan"
 4) "software enginner"
+
+>HSET mahasiswa:1 nama "ramma" nim "1234" ipk "3.14" semester 8
+>HGET mahasiswa:1 nama 
+"ramma"
