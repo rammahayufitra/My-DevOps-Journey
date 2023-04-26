@@ -244,5 +244,3 @@ docker exec -it redis_cache_1 sh
 
 
 
-https://medium.com/redhajuanda/berkenalan-dengan-redis-dan-golang-part-i-12600235157d
-https://www.auroria.io/running-pytorch-models-for-inference-using-fastapi-rabbitmq-redis-docker/
