@@ -1,0 +1,4 @@
+1.jalankan docker-compose up 
+2.jalankan note txt 
+3.type redis-cli 
+4.untuk testing ketikkan PING dan jika berhasil redis akan membalas PONG

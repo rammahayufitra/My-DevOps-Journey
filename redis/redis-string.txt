@@ -1,0 +1,4 @@
+Redis strings commands are used for managing string values in Redis
+> SET kalimat1 "belajar redis itu menyenangkan" 
+> GET kalimat1
+"belajar redis itu menyenangkan"  

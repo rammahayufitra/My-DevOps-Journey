@@ -1,0 +1,7 @@
+Redis keys commands are used for managing keys in Redis
+SET <Key Name> <Value>
+> SET redis 1 
+> GET redis
+"1"
+> DEl redis 
+(integer) 1

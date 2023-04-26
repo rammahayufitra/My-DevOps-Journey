@@ -1,0 +1,10 @@
+Redis Sets are an unordered collection of unique strings. Unique means sets does not allow repetition of data in a key.
+> SADD makanan "nasi goreng" 
+(integer) 1 
+> SADD makanan "mie goreng"
+(integer) 1
+> SADD makanan "nasi goreng"
+(integer) 0 
+> SMEMBERS makanan
+1) "mie goreng"
+2) "nasi goreng"
