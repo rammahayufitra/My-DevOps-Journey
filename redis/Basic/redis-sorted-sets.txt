@@ -1,0 +1,6 @@
+Redis Sorted Sets are similar to Redis Sets with the unique feature of values stored in a set. The difference is, every member of a Sorted Set is associated with a score, that is used in order to take the sorted set ordered, from the smallest to the greatest score.
+> ZADD latihan 1 Golang 
+> ZADD latihan 2 Redis 
+> ZADD latihan 4 Networking 
+> ZADD latihan 3 CI/CD 
+> ZRANGE latihan 0 5 WITHSCORES 

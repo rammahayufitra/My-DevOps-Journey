@@ -1,0 +1,1 @@
+Redis server commands are basically used to manage Redis server.
