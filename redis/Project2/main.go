@@ -13,9 +13,7 @@ func main(){
 		}, 
 		10,
 	)
-
 	pool.MaxActive = 10
-
 	// mengambil satu koneksi dari pool 
 	conn := pool.Get() 
 	defer conn.Close() 
