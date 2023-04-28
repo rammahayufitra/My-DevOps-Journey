@@ -1,18 +1,16 @@
-version: "3"  
+version: '3'
+
 services:
      prometheus:
-          image: prom/prometheus:latest
-          ports: 
-          - 9090:9090
+          image: prom/prometheus
           volumes:
-          - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
-     app:
-          container_name: app
-          build: ./app/.
+               - ./prometheus:/etc/prometheus
+          command:
+               - '--config.file=/etc/prometheus/prometheus.yml'
           ports:
-          - "5000:5000"
-          volumes:
-          - "./app/app.py:/app.py"
+               - '9090:9090'
+          restart: always
+
      node-exporter:
           image: prom/node-exporter
           volumes:
@@ -26,17 +24,12 @@ services:
           restart: always
 
      grafana:
-          image: grafana/grafana:7.5.7
+          image: grafana/grafana
           ports:
-               - "3000:3000"
+               - '3000:3000'
           volumes:
-               - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
                - grafana-data:/var/lib/grafana
-          depends_on:
-               - prometheus
+          restart: always
 
-      
 volumes:
   grafana-data:
-
-
