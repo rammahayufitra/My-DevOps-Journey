@@ -1,0 +1,4 @@
+curl -O https://portal.socketxp.com/download/linux/socketxp && chmod +wx socketxp && sudo mv socketxp /usr/local/bin
+cd /usr/local/bin 
+sudo ./socketxp login eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjI2MzUyODQxNzMsImtleSI6IjE0ZjczODcwLWZlNGMtNDUwYy04NWM4LTIyMjg0Mzk2Y2VmZiJ9.ckLvIcwX2TuiYYig4v9aUsu-r5LE7NTjpmqSwxt17lg
+socketxp connect http://localhost:5000
