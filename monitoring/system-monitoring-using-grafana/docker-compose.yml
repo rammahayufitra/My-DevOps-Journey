@@ -1,0 +1,18 @@
+version: "3"  
+services:
+     prometheus:
+          image: prom/prometheus:v2.29.2
+          ports: 
+          - 9090:9090
+          volumes:
+          - "/home/delameta/My-DevOps-Journey/monitoring/system-monitoring-using-grafana/prometheus/prometheus_ak.yml:/etc/prometheus/prometheus.yml"
+     node-exporter:
+          image: quay.io/prometheus/node-exporter:v1.2.2 
+          ports:
+          - 9100:9100
+     grafana:
+          image: grafana/grafana:8.1.2
+          ports:
+          - 3000:3000
+   
+
