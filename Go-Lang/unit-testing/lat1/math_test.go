@@ -1,6 +1,8 @@
-package math_test
+package math
 
-import "testing"
+import (
+	"testing"
+)
 
 
 func TestAdd(t *testing.T){
