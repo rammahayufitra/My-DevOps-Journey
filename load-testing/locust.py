@@ -2,7 +2,7 @@ from locust import HttpUser, task, between
 import time
 
 class MyUser(HttpUser):
-    wait_time = between(1, 5)
+    wait_time = between(1, 2)
     counting = 0
 
     @task
